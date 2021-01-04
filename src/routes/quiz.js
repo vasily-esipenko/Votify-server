@@ -12,7 +12,7 @@ router.post('/create', async (req, res) => {
     await quiz.create({
         question: req.body.question,
         options: req.body.options,
-        created: new Date()
+        created: new Date().toDateString(),
     }).then(quiz => {
         res.json(quiz)
     }).catch(error => {

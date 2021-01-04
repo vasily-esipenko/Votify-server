@@ -16,9 +16,9 @@ const quizSchema = new mongoose.Schema({
         required: true
     },
     created: {
-        type: Date,
+        type: String,
         required: true
-    }
+    },
 })
 
 const Quiz = mongoose.model('Quiz', quizSchema)
